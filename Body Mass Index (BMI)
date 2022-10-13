@@ -1,21 +1,21 @@
 weight = input('What is you weight in kg?: ')
 height = input('What is your height in cm?: ')
 
-imc = round(float(weight)/float(height)**2,2)
+bmi = round(float(weight)/float(height)**2,2)
 
-if imc < 16:
-    print ('Your IMC is ' + str(imc) + ', you are severely underweight.')
-elif 16 < imc < 16.99:
-    print('Your IMC is ' + str(imc) + ', your are moderately thin.')
-elif 17 < imc < 18.49:
-    print('Your IMC is ' + str(imc) + ', your thinness is acceptable.')
-elif 18.59 < imc < 24.99:
-    print('Your IMC is ' + str(imc) +', your weight is normal.')
-elif 25.00 < imc < 29.99:
-    print('Your IMC is ' + str(imc) +', you are overweight.')
-elif 30.00 <imc < 34.99:
-    print('Your IMC is ' + str(imc) +', you are obese: Type I.')
-elif 35.00 < imc < 40.00:
-    print('Your IMC is ' + str(imc) +', you are obese: Tipo II.')
+if bmi < 16:
+    print ('Your IMC is ' + str(bmi) + ', you are severely underweight.')
+elif 16 < bmi < 16.99:
+    print('Your IMC is ' + str(bmi) + ', your are moderately thin.')
+elif 17 < bmi < 18.49:
+    print('Your IMC is ' + str(bmi) + ', your thinness is acceptable.')
+elif 18.59 < bmi < 24.99:
+    print('Your IMC is ' + str(bmi) +', your weight is normal.')
+elif 25.00 < bmi < 29.99:
+    print('Your IMC is ' + str(bmi) +', you are overweight.')
+elif 30.00 <bmi < 34.99:
+    print('Your IMC is ' + str(bmi) +', you are obese: type I.')
+elif 35.00 < bmi < 40.00:
+    print('Your IMC is ' + str(bmi) +', you are obese: type II.')
 else:
-    print('Your IMC is ' + str(imc) +', you are obese: tipo III.')
+    print('Your IMC is ' + str(bmi) +', you are obese: type III.')
