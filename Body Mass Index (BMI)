@@ -1,5 +1,5 @@
-weight = input('What is you weight?: ')
-height = input('What is your height?: ')
+weight = input('What is you weight in kg?: ')
+height = input('What is your height in cm?: ')
 
 imc = round(float(weight)/float(height)**2,2)
 
